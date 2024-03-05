@@ -10,7 +10,7 @@ namespace IGoLibrary_Winform.Controller
     {
         public ReserveInfo GetReserveInfo(string Cookie, string QueryStatement)
         {
-            using (var client = new RestClient("https://wechat.v2.traceint.com/index.php/graphql/"))
+            using (var client = new RestClient("https://libseat.shnu.edu.cn/index.php/graphql/"))
             {
                 var request = new RestRequest();
                 request.Method = Method.Post;
