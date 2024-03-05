@@ -24,15 +24,15 @@ namespace IGoLibrary_Winform.Controller
         /// <returns></returns>
         public AllLibsSummary GetAllLibsSummary(string Cookie, string QueryStatement)
         {
-            using (var client = new RestClient("https://wechat.v2.traceint.com/index.php/graphql/"))
+            using (var client = new RestClient("https://libseat.shnu.edu.cn/index.php/graphql/"))
             {
                 var request = new RestRequest();
                 request.Method = Method.Post;
                 request.RequestFormat = DataFormat.Json;
                 request.AddHeader("Content-Type", @"application/json");
-                request.AddHeader("Host", @"wechat.v2.traceint.com");
+                request.AddHeader("Host", @"libseat.shnu.edu.cn");
                 request.AddHeader("Connection", @"keep-alive");
-                request.AddHeader("Origin", @"https://web.traceint.com");
+                request.AddHeader("Origin", @"https://libseat.shnu.edu.cn");
                 request.AddHeader("User-Agent", @"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 NetType/WIFI MicroMessenger/7.0.20.1781(0x6700143B) WindowsWechat(0x63070626)");
                 request.AddHeader("App-Version", @"2.0.11");
                 request.AddHeader("Accept", @"*/*");
