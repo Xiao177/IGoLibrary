@@ -7,7 +7,7 @@ namespace IGoLibrary_Winform.Controller
     {
         public string GetCookie(string code)
         {
-            var client = new RestClient(string.Format("http://wechat.v2.traceint.com/index.php/urlNew/auth.html?r=https%3A%2F%2Fweb.traceint.com%2Fweb%2Findex.html&code={0}&state=1",code));
+            var client = new RestClient(string.Format("https://libseat.shnu.edu.cn/index.php/urlNew%2Fauth.html%3Fr%3Dhttps%253A%252F%252Flibseat.shnu.edu.cn%252Fweb%2Findex.html&code={0}&state=1",code));
             var request = new RestRequest();
             request.Method = Method.Get;
             CancellationTokenSource cts = new CancellationTokenSource();
